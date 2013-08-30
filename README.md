@@ -17,6 +17,7 @@ Sample:
 	Examining: mozilla.com.1377926193.0.stillis	Matches
 
 Details: 
+
 	stillis retrieves the current record for a domain name, prints out selected attributes then
 	stores the record as a python pickle structure with the current epoch time stamp. 
 
@@ -24,5 +25,6 @@ Details:
 	record to those records, printing a simple status of match/no match. 
 
 Prereqs: 
+
 	python whois (pip install whois)
 
