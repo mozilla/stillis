@@ -18,15 +18,14 @@ def diffDomain(domainName):
     currRecordContent=pickle.dumps(currRecord)
     currRecordFile.write(currRecordContent)
     currRecordFile.close()
-
   
     for dfile in glob.glob('{0}*stillis'.format(domainName)):
-      sys.stdout.write('Examining: {0}'.format(dfile))
-      dfileContent=open(dfile).read()
-      if dfileContent==currRecordContent:
-          sys.stdout.write('\tMatches \n')
-      else:
-          sys.stdout.write('\tNo match \n')
+        sys.stdout.write('Examining: {0}'.format(dfile))
+        dfileContent=open(dfile).read()
+        if dfileContent==currRecordContent:
+            sys.stdout.write('\tMatches \n')
+        else:
+            sys.stdout.write('\tNo match \n')
 
 if __name__ == "__main__":
     parser = OptionParser();
